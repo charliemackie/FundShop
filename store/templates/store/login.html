@@ -2,21 +2,21 @@
 {% load static %}
 {% block main_content %}
 
-<body style="background-color: rgb(82, 114, 92);">
-<div class="row pt-5"></div>
-<div class="row pt-5">
-    <div class="col-4"></div>
-    <div class="card col-4">
-        <div class="pt-2">
-        Enter your order info
-        </div>
-        <div class="card-body">
-            hey
-        </div>
+<div class="card fixed">
+    <div class="m-3" style="font-size: 25pt;">
+        Enter some order information
     </div>
-    <div class="col-4"></div>
+    <div class="form-floating m-3">
+        <input class="form-control" id="order" placeholder="name@example.com">
+        <label for="floatingInput">Order Number</label>
+      </div>
+      <div class="form-floating m-3">
+        <input class="form-control" id="postal" placeholder="Password">
+        <label for="floatingPassword">Postal Code</label>
+      </div>
+      <div class="p-3">
+      <a type="button" href="{% url 'items' %}" class="btn btn-success">Choose Return Items</a>
+    </div>
 </div>
-</body>
-
 
 {% endblock %}

@@ -1,14 +1,32 @@
 from django.shortcuts import render
+from .models import item
 
-# Create your views here.
+def home(request):
+    return render(request, 'store/login.html')
 
-from django.http import HttpResponse
+def items(request):
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    items = item.objects.all()
 
-def login(request):
+    context = {
+        'items': items
+    }
 
-    context = {}
+    return render(request, 'store/items.html', context)
+
+def slider(request):
     
-    return render(request, 'store/login.html', context)
+    context = {
+
+    }
+
+    total = 0
+
+    if request.method == "POST":
+        values = [v for v in request.POST.values() if v.isdigit()]
+        context = {
+            "values": values,
+            "total" : total
+        }
+
+    return render(request, 'store/slider.html', context)

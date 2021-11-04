@@ -1,0 +1,34 @@
+{% extends 'store/base.html' %}
+{% load static %}
+{% block main_content %}
+
+<div class="card fixed">
+
+    <div class="row m-3" style="font-size: 25pt;">
+        Which items would you like to return?
+    </div>
+
+    <form action="{% url 'slider' %}" method="POST">
+        {% csrf_token %}
+        {% for item in items %}
+        <div class="row m-2">
+            <button type="button" class="btn btn-light" name="{{ item.name }}" value="{{ item.price }}">
+                <div class="row">
+                    <div class="col-4">{{ item.name }}</div>
+                    <div class="col-4">{{ item.price }}$</div>
+                    <div class="col-4">
+                        <input type="checkbox" id="radio" name="{{ item.name }}" value="{{ item.price }}"/>
+                    </div>
+                </div>
+            </button>
+        </div>
+        {% endfor %}
+
+        <div class="p-3">
+            <button type="submit" class="btn btn-success">Instant Store Credit</button>
+        </div>
+    </form>
+    
+</div>
+
+{% endblock %}

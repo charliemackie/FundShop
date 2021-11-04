@@ -1,0 +1,21 @@
+html, body {
+    background-color: rgb(126, 174, 138);
+    position: fixed;
+    font-family:'Futura', serif !important;
+    font-size: 20pt;
+}
+
+div.fixed {
+    position: fixed;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+div.title {
+    font-size: large;
+}
+
+input#radio {
+    transform: scale(2);
+ }

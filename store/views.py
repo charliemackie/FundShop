@@ -24,6 +24,8 @@ def slider(request):
 
     if request.method == "POST":
         values = [v for v in request.POST.values() if v.isdigit()]
+        ints = [float(v) for v in values]
+        total = sum(ints)
         context = {
             "values": values,
             "total" : total

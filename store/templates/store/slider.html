@@ -2,10 +2,54 @@
 {% load static %}
 {% block main_content %}
 
-<div>
-    {% for value in values %}
-    {{ value }}
-    {% endfor %}
+<div class="card fixed-top">
+    <div class="row m-3" style="font-weight: bolder;">
+        Split your Return
+    </div>
 </div>
 
+<div class="card fixed">
+    <div>
+        <div class="row m-3">
+            Purchase new items before you ship your return items back with instant Store Credit.
+        </div>
+    </div>
+    <center>
+        <div class="col" style="font-weight:bolder; color: darkgreen; font-size: 40pt;"> ${{ total }} </div>
+    </center>
+    <br>
+   
+        <div class="card text-dark bg-light m-2" >
+            <div class="card-header">Choose the % of your return you want in Store Credit vs. Cash</div>
+            <div class="card-body">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-4">
+                        0%
+                    </div>
+                    <div class="col-6" style="font-weight:bolder; color: darkgreen; font-size: 20pt;">
+                        <output id="slideroutput"></output> % Store Credit
+                    </div>
+                    <div class="col">
+                        100%
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <center>
+            <div class="m-3">
+                <button type="button" class="btn btn-success">Shop now with X</button>
+            </div>
+        </center>
+</div>
+
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'store/js/slider.js' %}"></script>
 {% endblock %}

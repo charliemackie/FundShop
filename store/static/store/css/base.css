@@ -1,6 +1,5 @@
 html, body {
     background-color: rgb(126, 174, 138);
-    position: fixed;
     font-family:'Futura', serif !important;
     font-size: 20pt;
 }
@@ -10,13 +9,39 @@ div.fixed {
     top:  50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    overflow: scroll;
 }
 
 div.fixed-top {
     position: fixed;
-    top:  8%;
-    left: 50%;
+    top: 8%;
+    left: 45%;
+    width: 50rem;
     transform: translate(-50%,-50%);
+}
+
+div.fixed-left {
+    position: fixed;
+    top:  53%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    max-width: 30rem;
+}
+
+div.fixed-left-return {
+    position: fixed;
+    top:  53%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+div.fixed-right {
+    position: fixed;
+    top:  53%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    width: 20rem;
+    height: 25rem;
 }
 
 div.title {
@@ -68,3 +93,19 @@ div.slidercontainer {
     border-radius: 50%;
     cursor: pointer; /* Cursor on hover */
 }
+
+img.suggestions {
+    width: 175pt;
+}
+
+img.suggestions-right {
+    width: 175pt;
+    position: relative;
+    right: 50px;
+}
+
+div.scroll-box {
+    overflow: scroll;
+}
+
+

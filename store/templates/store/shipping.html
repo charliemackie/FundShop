@@ -1,0 +1,35 @@
+{% extends 'store/base.html' %}
+{% load static %}
+{% block main_content %}
+
+<div class="card fixed">
+
+    <div class="row m-3" style="font-size: 25pt;">
+        How would you like to return your items?
+    </div>
+
+    <div class="row m-4">
+        <div class="col-6">
+            <a type="button" class="btn btn-success">
+                <center class="m-2" style="font-weight: bolder;">
+                    Return in Store
+                </center>
+                <div class="m-2 text-light" style="font-size: 17pt;">
+                    Bring your items back into the nearest store and we'll give you a barcode for your credit.
+                </div>
+            </a>
+        </div>
+        <div class="col-6">
+            <a type="button" class="btn btn-success">
+                <center class="m-2" style="font-weight: bolder;">
+                    Ship Back
+                </center>
+                <div class="m-2 text-light" style="font-size: 17pt;">
+                    We'll create a shipping label for you at the nearest shipping center.
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

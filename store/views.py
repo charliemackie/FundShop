@@ -2,6 +2,9 @@ from django.shortcuts import render
 from .models import item
 
 def home(request):
+    return render(request, 'store/home.html')
+
+def login(request):
     return render(request, 'store/login.html')
 
 def items(request):
@@ -32,3 +35,11 @@ def slider(request):
         }
 
     return render(request, 'store/slider.html', context)
+
+def shipping(request):
+
+    context = {
+
+    }
+    
+    return render(request, 'store/shipping.html', context)

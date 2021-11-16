@@ -3,24 +3,24 @@
 {% block main_content %}
 
 <div class="card fixed-top">
-    <div class="row m-3" style="font-weight: bolder;">
+    <div class="row m-3" style="font-size: 25pt;">
         Split your Return
     </div>
 </div>
 
-<div class="card fixed">
+<div class="card fixed-left">
     <div>
         <div class="row m-3">
             Purchase new items before you ship your return items back with instant Store Credit.
         </div>
     </div>
     <center>
-        <div class="col" style="font-weight:bolder; color: darkgreen; font-size: 40pt;"> ${{ total }} </div>
+        <div class="col" id="returnvalue" style="font-weight:bolder; color: darkgreen; font-size: 40pt;"> ${{ total }} </div>
     </center>
     <br>
-   
-        <div class="card text-dark bg-light m-2" >
-            <div class="card-header">Choose the % of your return you want in Store Credit vs. Cash</div>
+
+        <div class="card text-dark bg-light m-2 border-0" >
+            <div class="card-header border-0">Choose the % of your return you want in Store Credit vs. Cash</div>
             <div class="card-body">
                 <div class="slidecontainer">
                     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
@@ -42,9 +42,47 @@
 
         <center>
             <div class="m-3">
-                <button type="button" class="btn btn-success">Shop now with X</button>
+                <a type="button" href="{% url 'shipping' %}" class="btn btn-success">Shop now with $<output id="totaloutput"></output></a>
             </div>
         </center>
+</div>
+
+<div class="scroll-box card fixed-right border-0">
+
+    <div>
+        <div class="row m-3">
+            Offers
+        </div>
+    </div>
+
+    <div class="card text-dark bg-light m-2 border-0" >
+        <div class="card-header border-0">Discounts<div style="color: rgb(138, 138, 138);">(Choose a higher Store Credit % for more discounts!)</div></div>
+            <div class="card-body">
+                <span class="gray badge rounded-pill bg-primary m-2" id="discount1" style="display: block;" >Extra 10$ to Shop with</span>
+                
+                <span class="badge rounded-pill bg-primary m-2" id="discount2" style="display: block;">Free 10 Pack of Shoe horns</span>
+                
+                <span class="badge rounded-pill bg-primary m-2" id="discount3" style="display: none;">25% your order in December 2022</span>
+            </div>
+    </div>
+
+    <div class="scroll-box card text-dark bg-light m-2 border-0" >
+
+        <div class="card-header border-0">Items you may like</div>
+    
+        <div class="row">
+            <img class="suggestions m-2" src="{% static 'store/images/hat.png' %}">
+            <img class="suggestions-right m-2" src="{% static 'store/images/redshirt.png' %}">
+        </div>
+
+        <div class="row">
+            <img class="suggestions m-2" src="{% static 'store/images/shirts.png' %}">
+            <img class="suggestions-right m-2" src="{% static 'store/images/blueshirt.png' %}">
+        </div>
+
+
+    </div>
+
 </div>
 
 

@@ -1,1 +1,1 @@
-web: gunicorn FundShop.wsgi 
+web: gunicorn FundShop.wsgi --log-file -

@@ -10,7 +10,7 @@
 
     <div class="row m-4">
         <div class="col-6">
-            <a type="button" class="btn btn-success">
+            <a class="btn btn-success">
                 <center class="m-2" style="font-weight: bolder;">
                     Return in Store
                 </center>
@@ -20,7 +20,7 @@
             </a>
         </div>
         <div class="col-6">
-            <a type="button" class="btn btn-success">
+            <a class="btn btn-success">
                 <center class="m-2" style="font-weight: bolder;">
                     Ship Back
                 </center>
@@ -30,6 +30,13 @@
             </a>
         </div>
     </div>
+
+    <center>
+        <a href="{% url 'home' %}" class="btn btn-danger m-3">
+            Home
+        </a>
+    </center>
+    
 </div>
 
 {% endblock %}

@@ -12,37 +12,16 @@ div.fixed {
     overflow: scroll;
 }
 
-div.fixed-top {
-    position: fixed;
-    top: 8%;
-    left: 45%;
-    width: 50rem;
+div.fixed-slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: -40%;
     transform: translate(-50%,-50%);
+    width: 60rem;
+    overflow: scroll;
 }
 
-div.fixed-left {
-    position: fixed;
-    top:  53%;
-    left: 30%;
-    transform: translate(-50%,-50%);
-    max-width: 30rem;
-}
-
-div.fixed-left-return {
-    position: fixed;
-    top:  53%;
-    left: 30%;
-    transform: translate(-50%,-50%);
-}
-
-div.fixed-right {
-    position: fixed;
-    top:  53%;
-    left: 70%;
-    transform: translate(-50%,-50%);
-    width: 20rem;
-    height: 25rem;
-}
 
 div.title {
     font-size: large;
@@ -106,6 +85,10 @@ img.suggestions-right {
 
 div.scroll-box {
     overflow: scroll;
+}
+
+div.slider-page-box {
+    width: 100%;
 }
 
 

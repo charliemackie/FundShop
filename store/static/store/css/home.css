@@ -17,3 +17,9 @@ div.footer {
 div.shadow {
     box-shadow: rgb(19, 19, 19);
 }
+
+div.demo {
+    position: fixed;
+    top: 500px;
+    left: 500px;
+}

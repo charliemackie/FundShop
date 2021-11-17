@@ -1,0 +1,111 @@
+html, body {
+    background-color: rgb(126, 174, 138);
+    font-family:'Futura', serif !important;
+    font-size: 20pt;
+}
+
+div.fixed {
+    position: fixed;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: scroll;
+}
+
+div.fixed-top {
+    position: fixed;
+    top: 8%;
+    left: 45%;
+    width: 50rem;
+    transform: translate(-50%,-50%);
+}
+
+div.fixed-left {
+    position: fixed;
+    top:  53%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    max-width: 30rem;
+}
+
+div.fixed-left-return {
+    position: fixed;
+    top:  53%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+div.fixed-right {
+    position: fixed;
+    top:  53%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    width: 20rem;
+    height: 25rem;
+}
+
+div.title {
+    font-size: large;
+}
+
+input#radio {
+    transform: scale(2);
+ }
+
+div.slidercontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 20px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 35px; /* Set a specific slider handle width */
+    height: 35px; /* Slider handle height */
+    background: darkgreen; /* Green background */
+    border-radius: 50%;
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 35px; /* Set a specific slider handle width */
+    height: 35px; /* Slider handle height */
+    background: darkgreen; /* Green background */
+    border-radius: 50%;
+    cursor: pointer; /* Cursor on hover */
+}
+
+img.suggestions {
+    width: 175pt;
+}
+
+img.suggestions-right {
+    width: 175pt;
+    position: relative;
+    right: 50px;
+}
+
+div.scroll-box {
+    overflow: scroll;
+}
+
+

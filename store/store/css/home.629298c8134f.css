@@ -1,0 +1,19 @@
+html, body {
+    background-color: rgb(255, 253, 246);
+    font-family:'Futura', serif !important;
+    font-size: 20pt;
+}
+
+div.home {
+    background-color: rgb(255, 253, 246);
+}
+
+div.footer {
+    position: absolute;
+    right: 0px;
+    left: 0px
+}
+
+div.shadow {
+    box-shadow: rgb(19, 19, 19);
+}

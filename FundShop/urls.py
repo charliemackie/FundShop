@@ -23,5 +23,5 @@ urlpatterns = [
     path('login/', login, name='login'),
     path('items/', items, name='items'),
     path('slider/', slider, name='slider'),
-    path('shipping/', shipping, name='shipping')
+    path('shipping/', shipping, name='shipping'),
 ]

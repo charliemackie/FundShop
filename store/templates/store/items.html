@@ -14,11 +14,19 @@
         <div class="row m-2">
             <button type="button" class="btn btn-light" name="{{ item.name }}" value="{{ item.price }}">
                 <div class="row">
-                    <div class="col-4">{{ item.name }}</div>
-                    <div class="col-4">{{ item.price }}$</div>
-                    <div class="col-4">
+                    <div class="col-3">{{ item.name }}</div>
+                    <div class="col-3">{{ item.price }}$</div>
+                    <div class="col-3">{{ item.size }}</div>
+                    <div class="col-3">
                         <input type="checkbox" id="radio" name="{{ item.name }}" value="{{ item.price }}"/>
                     </div>
+                    <select id="inputState" class="col m-3 form-select">
+                        <option selected>Why?...</option>
+                        <option>Too Big</option>
+                        <option>Too Small</option>
+                        <option>Dont like it</option>
+                        <option>Damaged</option>
+                    </select>
                 </div>
             </button>
         </div>

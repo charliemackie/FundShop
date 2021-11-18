@@ -43,3 +43,4 @@ def shipping(request):
     }
     
     return render(request, 'store/shipping.html', context)
+

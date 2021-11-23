@@ -1,7 +1,7 @@
 html, body {
     background-color: rgb(126, 174, 138);
     font-family:'Futura', serif !important;
-    font-size: 20pt;
+    font-size: 15pt;
 }
 
 div.fixed {
@@ -74,11 +74,11 @@ div.slidercontainer {
 }
 
 img.suggestions {
-    width: 175pt;
+    width: 140pt;
 }
 
 img.suggestions-right {
-    width: 175pt;
+    width: 140pt;
     position: relative;
     right: 50px;
 }
